@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout App</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+    <div>
+        <h2>Keep Track Of Your Progress</h2>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="submittingNewExercise();" >
+                    <div>
+                        <label for="date-of-exercise"><b>Date</b></label>
+                        <input type="date" name="date-of-exercise" id="date-of-exercise">
+                    </div>
+                    <div>
+                        <label for="type-of-exercise"><b> Type Of Exercise</b></label>
+                        <input type="text" name="type-of-exercise" id="type-of-exercise">
+                    </div>
+                    <div>
+                        <label for="duration"><b>Duration</b></label>
+                        <input type="text" name="duration" id="duration">
+                    </div>
+                    <div>
+                        <label for="reps"><b>How many reps did you do?</b></label>
+                        <input type="text" name="reps" id="reps">
+                    </div>
+                    <div class="text-center" id= "collecting-data">
+                        <button id="submit" class="btn btn-primary form-control">Add Exercise Info</button>
+                        <br>
+                        <button type="reset" value="Reset" id="reset" class="btn btn-warning form-control">Clear </button>
+                    </div>
+                </form>
+            </td>
+        </tr>
+    </table>
+</div>
+<div>
+    <table>
+        <tr>
+            <td>
+                <td>
+                    <table class="list" id="workout-list">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Type of Exercise</th>
+                                <th>Duration</th>
+                                <th>How many reps did you do?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+
+    
+    <script src="workout.js"></script>
+    <script scr="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    
+</body>
+</html>
